@@ -9,8 +9,8 @@
         background-repeat: repeat-x;
         height: 100%;
         width: 100%;
-        filter: blur(1.3px);
-        -webkit-filter: blur(1.3px);
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
     }
     &__mask {
         top: 0;
@@ -30,7 +30,7 @@
         align-items: flex-end;
         justify-content: center;
         flex-direction: column;
-        padding: 0 100px;
+        padding: 0 15%;
         .c-banner-text{
             &__text{
                 font-weight: 400;
