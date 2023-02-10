@@ -8,3 +8,25 @@ html, body { height: 100%; box-sizing: border-box; }
     box-sizing: inherit;
     margin: 0;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: $accent-lighter-color $primary-color;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: $primary-color;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $accent-lighter-color;
+    border-radius: 0px;
+    border: 0px none;
+  }
