@@ -1,9 +1,10 @@
-@import '../../scss/common.scss';
+@import '../../../styles/common.scss';
 
 .c-header {
     width: 100%;
     position: relative;
     height: 75vh;
+    min-height: 400px;
     @media #{$mobile}{
         height: 50vh;
     }
@@ -18,8 +19,8 @@
         }
     }
     &__mask {
-        background: rgb(60,39,117);
-        background: linear-gradient(180deg, rgba(60, 39, 117, 0.4) 0%, rgba(60, 39, 117, 0.6) 70%, #181365 100%);
+        background: $purple;
+        background: linear-gradient(180deg, rgba($color: $purple, $alpha: 40%) 0%, rgba($color: $purple, $alpha: 70%) 70%, $primary-color 100%);
         opacity: 0.8;
         position: absolute;
         width: 100%;

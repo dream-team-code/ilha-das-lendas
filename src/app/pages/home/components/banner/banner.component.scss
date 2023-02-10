@@ -1,0 +1,64 @@
+@import '../../../../../styles/common.scss';
+
+.c-banner {
+    position: relative;
+    height: 250px;
+    &__img {
+        background: url('../../../../../assets/img/banner.png') center;
+        background-size: contain;
+        background-repeat: repeat-x;
+        height: 100%;
+        width: 100%;
+        filter: blur(1px);
+        -webkit-filter: blur(1px);
+        @media #{$tablet}{
+            background-size: cover;
+        }
+    }
+    &__mask {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgb(24,19,101);
+        background: linear-gradient(270deg, rgba($primary-color, 0.9) 0%, rgba($blue, 0.4) 100%);
+    }
+    &__text-content {
+        position: absolute;
+        color: var(--text-primary-color);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 15%;
+        @media #{$mobile}{
+            align-items: center;
+        }
+        .c-banner-text{
+            display: flex;
+            flex-direction: column;
+            &__text{
+                font-weight: 400;
+                margin: 5px;
+                @media #{$mobile}{
+                    font-size: 18px;
+                }
+            }
+            &__text-focus{
+                font-size: 34px;
+                @media #{$mobile}{
+                    font-size: 24px;
+                }
+                &--highlight{
+                    color: $warn-color;
+                }
+            }
+            &__button{
+                align-self: center;
+            }
+        }
+    }
+}
