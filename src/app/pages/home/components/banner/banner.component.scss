@@ -34,10 +34,24 @@
         justify-content: center;
         flex-direction: column;
         padding: 0 15%;
+        @media #{$mobile}{
+            align-items: center;
+        }
         .c-banner-text{
+            display: flex;
+            flex-direction: column;
             &__text{
                 font-weight: 400;
-                margin: 0;
+                margin: 5px;
+                @media #{$mobile}{
+                    font-size: 18px;
+                }
+            }
+            &__text-focus{
+                font-size: 34px;
+                @media #{$mobile}{
+                    font-size: 24px;
+                }
             }
         }
     }
