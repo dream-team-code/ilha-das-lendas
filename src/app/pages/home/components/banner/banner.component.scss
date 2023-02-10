@@ -52,6 +52,12 @@
                 @media #{$mobile}{
                     font-size: 24px;
                 }
+                &--highlight{
+                    color: $warn-color;
+                }
+            }
+            &__button{
+                align-self: center;
             }
         }
     }
