@@ -12,6 +12,7 @@
     .c-middle{
         @include flexCenter;
         align-items: flex-end;
+        margin-bottom: 7px;
         &__text{
             color: var(--text-primary-color);
             margin-bottom: 8px;
