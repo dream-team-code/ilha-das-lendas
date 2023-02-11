@@ -1,6 +1,18 @@
 <div class="c-dream-team mat-typography">
 
-    <h1 class="c-dream-team__title mat-h1">Dream Team</h1>
+    <div  class="c-dream-team__title-box">
+        <h1 class="c-dream-team__title" 
+            >Dream Team
+            <span 
+                class="c-dream-team__badge"
+                matTooltip="Os jogadores com maior pontuação de cada role"
+                [matTooltipPosition]="'above'"
+                matTooltipHideDelay="100"
+                matTooltipClass="c-dream-team__tooltip">
+                i
+            </span>
+        </h1>
+    </div>
 
     <div class="c-dream-team__list">
         <app-card *ngFor="let card of [1, 2, 3, 4, 5, 6]"></app-card>

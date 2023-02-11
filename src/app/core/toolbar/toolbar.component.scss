@@ -1,7 +1,7 @@
 .c-toolbar{
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 50;
     transition: background-color 0.5s ease;
     &__spacer{
         flex: 1 1 auto;

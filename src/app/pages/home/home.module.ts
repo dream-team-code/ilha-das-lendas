@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { DreamTeamComponent } from './components/dream-team/dream-team.component';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     HomeRoutingModule,
     MatButtonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    MatTooltipModule
   ]
 })
 export class HomeModule { }
