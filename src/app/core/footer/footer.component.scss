@@ -5,46 +5,73 @@
     background-color: $primary-color;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+    @media #{$xtablet}{
+        grid-template-columns: 12fr;
+    }
     &__img{
         width: 100%;
+        @media #{$xtablet}{
+            display: none;
+        }
     }
     
     .c-middle{
         @include flexCenter;
         align-items: flex-end;
-        margin-bottom: 7px;
+        @media #{$xtablet}{
+            margin: 10px 0;
+        }
         &__text{
             color: var(--text-primary-color);
-            margin-bottom: 8px;
             &--link{
                 color: var(--text-primary-color);
+            }
+            @media #{$xtablet}{
+                margin-bottom: 0;
             }
         }
         &__icon{
             margin-left: 5px;
             width: 40px;
         }
+        @media #{$xtablet}{
+            order: 2;
+            width: 100%;
+            align-items: center;
+        }
     }
     .c-end{
+        order: 1;
         display: flex;
         flex-direction: column;
         background-color: $primary-darker-color;
+        @media #{$xtablet}{
+            align-items: center;
+        }
         .c-island-data{
             @include flexCenter;
-            padding: 0 20px;
+            padding: 0 50px;
             flex-direction: column;
             margin: 15px 0;
+            @media #{$xtablet}{
+                width: 40%;
+            }
+            @media #{$mobile}{
+                width: 80%;
+            }
             &__title{
                 color: var(--text-primary-color);
                 &--highlight{
                     color: $warn-color;
                 }
             }
-            &__icons{
+            &__link{
                 width: 60%;
+            }
+            &__icons{
+                width: 100%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                grid-gap: 15px;
                 align-items: center;
                 justify-items: center;
             }
@@ -66,9 +93,18 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 align-items: center;
                 justify-items: center;
+                @media #{$xtablet}{
+                    width: 30%;
+                }
+                @media #{$mobile}{
+                    width: 40%;
+                }
+            }
+            &__link{
+                width: 60%;
             }
             &__icon{
-                width: 60%;
+                width: 100%;
                 border-radius: 10px;
             }
         }
