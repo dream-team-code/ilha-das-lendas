@@ -8,7 +8,9 @@
                 matTooltip="Os jogadores com maior pontuação de cada role"
                 [matTooltipPosition]="'above'"
                 matTooltipHideDelay="100"
-                matTooltipClass="c-dream-team__tooltip">
+                matTooltipClass="c-dream-team__tooltip"
+                #tooltip="matTooltip" 
+                (click)="tooltip.toggle()">
                 i
             </span>
         </h1>
