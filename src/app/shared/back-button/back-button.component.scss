@@ -1,0 +1,17 @@
+.c-back-box{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 0 20px;
+    &__back{
+        margin-right: 10px;
+    }
+    &__text{
+        margin-bottom: 0;
+    }
+}
+
+::ng-deep{
+    .mat-fab .mat-button-wrapper {
+        line-height: 22px;
+    }
+}

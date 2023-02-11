@@ -8,6 +8,7 @@ import { RowTableComponent } from './components/row-table/row-table.component';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     TeamsRoutingModule,
     MatDividerModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule
   ]
 })
 export class TeamsModule { }
