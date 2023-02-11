@@ -47,46 +47,32 @@
     &__value {
         position: absolute;
         color: white;
-        font-size: 43px;
+        font-size: 27px;
         z-index: 20;
         font-weight: 900;
         top: 24%;
-        left: 11%;    
-
-        // @media screen and (max-width: 1000px) {
-            font-size: 33px;
-        // }
+        left: 11%;   
     }
     
     &__nick {
         position: absolute;
         color: white;
-        font-size: 31px;
         font-weight: 900;
-        bottom: 30%;
         z-index: 20;
         left: 50%;
         transform: translateX(-50%);
-
-        // @media screen and (max-width: 1000px) {
-            font-size: 20px;
-            bottom: 28%;
-        // }
+        font-size: 18px;
+        bottom: 28%;
     }
     
     &__name {
         position: absolute;
         color: white;
-        font-size: 14px;
+        font-size: 10px;
         bottom: 21%;
         z-index: 20;
         left: 50%;
         transform: translateX(-50%);
-
-        // @media screen and (max-width: 1000px) {
-            font-size: 12px;
-            bottom: 21%;
-        // }
     }
     
     &__logo {
