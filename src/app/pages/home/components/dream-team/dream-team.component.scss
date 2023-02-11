@@ -2,6 +2,26 @@
 
 .c-dream-team{
     background: $primary-color;
-    background: $primary-gradient;
-    height: 500px;
+    background: $primary-gradient;    
+    padding: 50px 15px;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    &__title {
+        color: var(--text-primary-color);
+        text-align: center;
+        font-size: 34px;
+    }
+
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        column-gap: 27px;
+        row-gap: 27px;
+        flex-wrap: wrap;
+    }
 }
