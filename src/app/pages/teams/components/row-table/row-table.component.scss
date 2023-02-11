@@ -5,18 +5,62 @@
     grid-template-columns: 1fr 4fr 1fr 1fr;
     padding: 10px 40px;
     align-items: center;
-    h3, h4{
+    @media #{$mobile}{
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+        padding: 10px 20px;
+    }
+    h3, h2{
         margin: 0;
+        text-align: center;
     }
     .c-team{
+        justify-self: flex-start;
         display: flex;
         align-items: center;
         &__img{
             width: 70px;
             margin-right: 10px;
+            @media #{$tablet}{
+                width: 50px;
+            }
         }
+        &__name{
+            text-align: start
+        }
+    }
+    &__divider-box{
+        @include flexCenter;
+    }
+    &__divider{
+        align-self: center;
+        width: 100%;
+    }
+    &__button{
+        justify-self: center;
     }
     &.c-header{
         padding: 20px 40px;
+        background-color: $primary-darker-color;
+        @media #{$mobile}{
+            padding: 10px 20px;
+        }
+    }
+    &.c-content{
+        &:hover{
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+            background-color: $primary-color;
+        }
+    }
+    .c-header{
+        &__name{
+            text-align: start;
+        }
+    }
+}
+
+::ng-deep{
+    .mat-mini-fab .mat-button-wrapper{
+        line-height: 20px;
     }
 }

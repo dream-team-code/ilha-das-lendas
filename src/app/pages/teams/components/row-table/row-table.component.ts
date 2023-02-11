@@ -8,13 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class RowTableComponent implements OnInit {
 
   @Input() public isHeader: boolean = false;
-  public teams: any = {
-    position: 1,
-    name: 'Red Canids',
-    logo: 'red.png',
-    overwall: 88,
-    id: 3
-  }
+  @Input() public team: any | undefined = undefined;
 
   constructor() { }
 
