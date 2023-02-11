@@ -1,7 +1,12 @@
+@import '../../../styles/common.scss';
+
 .c-back-box{
     display: flex;
     align-items: center;
     padding: 20px 0 0 20px;
+    @media #{$mobile}{
+        padding: 20px 0 0 2%;
+    }
     &__back{
         margin-right: 10px;
     }
