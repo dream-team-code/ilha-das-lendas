@@ -1,0 +1,13 @@
+@import '../../../styles/common.scss';
+
+.c-teams{
+    padding: 30px 15%;
+    background: $primary-gradient;
+    color: var(--text-primary-color);
+    @media #{$mobile}{
+        padding: 30px 2%;
+    }
+    &__title{
+        text-align: center;
+    }
+}
