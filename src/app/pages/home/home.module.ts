@@ -7,6 +7,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { MatButtonModule } from '@angular/material/button';
 import { DreamTeamComponent } from './components/dream-team/dream-team.component';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     HomeRoutingModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
