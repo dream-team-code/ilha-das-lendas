@@ -1,0 +1,124 @@
+.card {    
+    width: 228px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 980px) {
+        width: 206px;
+        height: 328px;
+    }
+
+    &__player-img {
+        max-width: 130%;
+        display: block;
+        position: absolute;
+        bottom: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    &__border {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        transform: translateX(-50%);
+
+        &--50 { width: 89%; }
+        &--60 { width: 93%; }
+        &--70 { width: 97%; }
+        &--80 { width: 98%; }
+    }
+    
+    &__container {
+        position: absolute;
+        margin: 0 auto;
+        mask-image: url(../../../assets/img/moldura.svg);
+        -webkit-mask-image: url(../../../assets/img/moldura.svg);
+        width: 100%;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+        mask-position: center;
+        height: 95%;    
+        background: radial-gradient(circle, #8f2738 0%, #431365 100%);
+        overflow: hidden;
+    }
+    
+    &__value {
+        position: absolute;
+        color: white;
+        font-size: 43px;
+        z-index: 20;
+        font-weight: 900;
+        top: 24%;
+        left: 11%;    
+
+        @media screen and (max-width: 980px) {
+            font-size: 33px;
+        }
+    }
+    
+    &__nick {
+        position: absolute;
+        color: white;
+        font-size: 31px;
+        font-weight: 900;
+        bottom: 30%;
+        z-index: 20;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: 980px) {
+            font-size: 20px;
+            bottom: 28%;
+        }
+    }
+    
+    &__name {
+        position: absolute;
+        color: white;
+        font-size: 14px;
+        bottom: 21%;
+        z-index: 20;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: 980px) {
+            font-size: 12px;
+            bottom: 21%;
+        }
+    }
+    
+    &__logo {
+        width: 14%;
+        height: auto;
+        position: absolute;
+        z-index: 20;
+        top: 43%;
+        left: 15%;
+    }
+    
+    &__flag {
+        width: 14%;
+        height: auto;
+        position: absolute;
+        z-index: 20;
+        top: 34%;
+        left: 15%;
+    }
+
+    &__role {
+        width: 14%;
+        height: auto;
+        position: absolute;
+        z-index: 20;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
