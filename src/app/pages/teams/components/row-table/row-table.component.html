@@ -1,0 +1,16 @@
+<div class="c-row c-header" *ngIf="isHeader">
+    <h3>Posição</h3>
+    <h3>Nome</h3>
+    <h3>Overwall</h3>
+    <h3>Cartas</h3>
+</div>
+<mat-divider *ngIf="!isHeader"></mat-divider>
+<div class="c-row" *ngIf="!isHeader">
+    <h4>{{ teams.position }}</h4>
+    <div class="c-team">
+        <img class="c-team__img" [src]="'./assets/img/teams/' + teams.logo" alt="">
+        <h4>{{ teams.name }}</h4>
+    </div>
+    <h4>{{ teams.overwall }}</h4>
+    <button mat-raised-button color="warn">VER CARTAS</button>
+</div>

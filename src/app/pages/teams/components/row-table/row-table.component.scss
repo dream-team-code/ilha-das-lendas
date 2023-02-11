@@ -1,0 +1,22 @@
+@import '../../../../../styles/common.scss';
+
+.c-row{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    padding: 10px 40px;
+    align-items: center;
+    h3, h4{
+        margin: 0;
+    }
+    .c-team{
+        display: flex;
+        align-items: center;
+        &__img{
+            width: 70px;
+            margin-right: 10px;
+        }
+    }
+    &.c-header{
+        padding: 20px 40px;
+    }
+}
