@@ -1,0 +1,14 @@
+@import '../../../styles/common.scss';
+
+.c-cards{
+    padding: 30px 15px;
+    background: $primary-gradient;
+    color: var(--text-primary-color);
+    @media #{$mobile}{
+        padding: 30px 2%;
+    }
+    &__title{
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
