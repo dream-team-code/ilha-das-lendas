@@ -29,6 +29,7 @@
             }
             @media #{$xtablet}{
                 margin-bottom: 0;
+                font-size: 12px;
             }
         }
         &__icon{
@@ -36,7 +37,7 @@
             width: 24px;
             margin-bottom: 8px;
             @media #{$xtablet}{
-                margin-bottom: 0;
+                margin-bottom: -3px;
             }
         }
         @media #{$xtablet}{
@@ -77,11 +78,14 @@
                 justify-content: center;
             }
             &__icons{
-                width: 80%;
+                width: 70%;
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 align-items: center;
                 justify-items: center;
+                @media #{$xtablet}{
+                    width: 80%;
+                }
             }
             &__icon{
                 width: 50px;
