@@ -45,13 +45,8 @@
     }
 
     &__card {
-        width: 228px !important;
-        height: 350px !important;
-
-        @media screen and (max-width: 1000px) {
-            width: 185px !important;
-            height: 298px !important;
-        }
+        width: 188px;
+        height: 290px;
     }
 }
 

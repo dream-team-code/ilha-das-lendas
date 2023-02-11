@@ -2,6 +2,8 @@
 
 .c-display {
     width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     border: 1px solid $primary-lighter-color;
@@ -35,7 +37,7 @@
         justify-content: center;
         padding-top: 350px;
         margin: 0 auto;
-        max-width: 1075px;
+        max-width: 1013px;
 
         @media screen and (max-width: 512px) {
             padding-top: 0;
@@ -64,7 +66,7 @@
 
     &__card-wrapper {
         display: grid;
-        grid-template-columns: 50px max-content;
+        grid-template-columns: 40px max-content;
         column-gap: 10px;
 
         @media screen and (max-width: 1000px) {
@@ -74,7 +76,7 @@
         &--upper {
             transform: translateY(-200px) !important;
 
-            @media screen and (max-width: 767px) {
+            @media screen and (max-width: 785px) {
                 transform: unset !important;
             }
         }
@@ -88,22 +90,14 @@
     }
 
     &__card {
-        width: 228px;
-        height: 350px;
+        width: 188px;
+        height: 290px;
         display: block;
 
         &--coach {
-            width: 213px;
-            height: 335px;
-
             @media screen and (max-width: 512px) {
                 margin: 0 auto;
             }
-        }
-
-        @media screen and (max-width: 1000px) {
-            width: 185px !important;
-            height: 298px !important;
         }
     }
 
@@ -117,7 +111,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 25px;
+            font-size: 22px;
 
             @media screen and (max-width: 1000px) {
                 font-size: 16px;

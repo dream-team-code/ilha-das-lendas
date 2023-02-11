@@ -53,9 +53,9 @@
         top: 24%;
         left: 11%;    
 
-        @media screen and (max-width: 1000px) {
+        // @media screen and (max-width: 1000px) {
             font-size: 33px;
-        }
+        // }
     }
     
     &__nick {
@@ -68,10 +68,10 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media screen and (max-width: 1000px) {
+        // @media screen and (max-width: 1000px) {
             font-size: 20px;
             bottom: 28%;
-        }
+        // }
     }
     
     &__name {
@@ -83,10 +83,10 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media screen and (max-width: 1000px) {
+        // @media screen and (max-width: 1000px) {
             font-size: 12px;
             bottom: 21%;
-        }
+        // }
     }
     
     &__logo {
