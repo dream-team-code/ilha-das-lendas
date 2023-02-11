@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-teams',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamsComponent implements OnInit {
 
-  constructor() { }
+  
+  constructor() {}
+
+  @ViewChild("teams") public teams: ElementRef<HTMLElement> = {} as ElementRef<HTMLElement>;
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.teams?.nativeElement?.scrollIntoView({behavior: 'smooth', block: 'center'});
+    }, 0);
   }
 
 }

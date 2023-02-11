@@ -28,3 +28,8 @@ $iphoneX: "(min-height: 800px)";
     align-items: center;
     justify-content: center;
 }
+
+@keyframes opacityStart{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
