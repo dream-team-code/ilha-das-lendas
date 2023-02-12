@@ -1,0 +1,12 @@
+<div class="card mat-typography">
+    <img [src]="'./assets/img/borders/' + categoryBorder[player.categoriaJogador] + '.png'" class="card__border" alt="">
+    <span class="card__value">{{ player.pontuacao || '--' }}</span>
+    <span class="card__nick">{{ player.nick || '--' }}</span>
+    <span class="card__name">{{ player.nome || '--' }}</span>
+    <img class="card__role" [src]="'./assets/img/roles/' + player.role.nome + '.svg'"/>   
+    <img [src]="'./assets/img/flags/' + player.nacionalidade.nome + '.jpg'" class="card__flag" alt="logo">
+    <img [src]="'./assets/img/teams/' + player.time + '.png'" class="card__logo" alt="logo">    
+    <div class="card__container">        
+      <img class="card__player-img" [src]="player.caminhoRelativo" alt="player"/>   
+    </div>
+</div>

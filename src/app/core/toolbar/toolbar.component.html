@@ -1,0 +1,7 @@
+<mat-toolbar color="primary" [class]="['c-toolbar', isTop && 'top']">
+    <h2 class="c-toolbar__logo" routerLink="/">ILHA DAS LENDAS</h2>
+    <div class="c-toolbar__spacer"></div>
+    <button mat-raised-button [color]="isTop ? 'warn' : 'accent'" [routerLink]="'/times'">
+        CARTAS
+    </button>
+</mat-toolbar>

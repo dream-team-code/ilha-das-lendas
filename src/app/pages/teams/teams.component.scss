@@ -1,0 +1,16 @@
+@import '../../../styles/common.scss';
+
+.c-teams{
+    background: $primary-gradient;
+    color: var(--text-primary-color);
+    &__container{
+        padding: 30px 15%;
+        @media #{$mobile}{
+            padding: 30px 2%;
+        }
+    }
+    
+    &__title{
+        text-align: center;
+    }
+}

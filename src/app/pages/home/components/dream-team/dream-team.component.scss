@@ -1,0 +1,64 @@
+@import '../../../../../styles/common.scss';
+
+.c-dream-team{
+    background: $primary-color;
+    background: $primary-gradient;    
+    padding: 50px 15px;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+    &__title-box{
+        @include flexCenter;
+    }
+
+    &__title {
+        color: var(--text-primary-color);
+        // text-align: center;
+        font-size: 34px;
+        position: relative;
+    }
+
+    &__badge{
+        margin-left: 5px;
+        position: absolute;
+        background-color: $warn-color;
+        color: $primary-color;
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+        line-height: 10px;
+        text-align: center;
+        border-radius: 20px;
+        padding-top: 5px;
+    }
+
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        column-gap: 27px;
+        row-gap: 27px;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 188px;
+        height: 290px;
+
+        @media screen and (max-width: 787px) {
+            width: 158px;
+            height: 250px;
+        }
+    }
+}
+
+::ng-deep{
+    .c-dream-team__tooltip{
+        background-color: $primary-darker-color;
+        font-family: 'Audiowide';
+        font-size: 16px;
+    }
+}
