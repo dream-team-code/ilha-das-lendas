@@ -5,7 +5,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    border: 1px solid rgba($color: $primary-lighter-color, $alpha: 0.3);
+    // border: 1px solid rgba($color: $primary-lighter-color, $alpha: 0.3);
     user-select: none;
 
     &__title-box {
@@ -20,6 +20,7 @@
         width: 95%;
         justify-self: center;
         column-gap: 15px;
+        padding-bottom: 15px;
         border-bottom: 1px solid rgba($color: $primary-lighter-color, $alpha: 0.3);
     }   
 
@@ -30,14 +31,12 @@
     &__cards {
         display: flex;
         position: relative;
-        padding: 10px;
+        padding: 15px 0;
         flex-wrap: wrap;
         column-gap: 20px;
         row-gap: 20px;
         justify-content: center;
-        padding-top: 350px;
         margin: 0 auto;
-        max-width: 1013px;
 
         @media screen and (max-width: 512px) {
             padding-top: 0;
@@ -46,7 +45,7 @@
     }
 
     &__coach-wrapper {
-        position: absolute;
+        // position: absolute;
         right: 20px;
         top: 0;
 

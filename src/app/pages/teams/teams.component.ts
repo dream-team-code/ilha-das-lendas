@@ -14,7 +14,7 @@ export class TeamsComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.teams?.nativeElement?.scrollIntoView({behavior: 'smooth', block: 'center'});
+      this.teams?.nativeElement?.scrollIntoView({behavior: 'smooth', block: 'nearest'});
     }, 0);
   }
 
