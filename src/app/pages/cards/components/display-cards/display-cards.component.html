@@ -13,8 +13,8 @@
 
         <div class="c-display__card-wrapper" *ngFor="let card of cards index as i" [ngClass]="{'c-display__card-wrapper--upper': i === 1}">
             <div class="c-display__card-icons">
-                <div class="c-display__variable">
-                    <img [src]=" card.diff >= 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="">
+                <div *ngIf="card.diff != 0" class="c-display__variable">
+                    <img [src]=" card.diff > 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="">
                     <span>{{ card.diff }}</span>
                 </div>
                 <div class="c-display__mvp">

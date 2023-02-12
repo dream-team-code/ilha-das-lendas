@@ -4,7 +4,7 @@
     <span class="card__nick">{{ player.nick || '--' }}</span>
     <span class="card__name">{{ player.nome || '--' }}</span>
     <img class="card__role" [src]="'./assets/img/roles/' + player.role + '.svg'"/>   
-    <img [src]=" player.pais === 'br' ? 'https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image' : 'https://s3.static.brasilescola.uol.com.br/be/2022/11/bandeira-da-coreia-do-sul.jpg'" class="card__flag" alt="logo">
+    <img [src]="'./assets/img/flags/' + player.pais + '.jpg'" class="card__flag" alt="logo">
     <img [src]="'./assets/img/teams/' + player.time + '.png'" class="card__logo" alt="logo">    
     <div class="card__container">        
       <img class="card__player-img" [src]="'./assets/img/players/' + player.imagem + '.png'" alt="player"/>   
