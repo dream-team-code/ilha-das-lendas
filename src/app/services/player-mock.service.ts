@@ -12,33 +12,6 @@ export class PlayerMockService {
     private players: Response<Jogador> = {
         pagina: [
             {
-                id: "6",
-                MVP: 0,
-                role: {
-                    descricao: "coach",
-                    id: "f",
-                    nome: "coach",
-                    status: "Ativo"
-                },
-                pontuacao: 92,
-                ultimaPontuacao: 92,
-                time: "losgrandes",
-                categoriaJogador: "God",
-                nacionalidadeId: "1",
-                roleId: "f",
-                nome: "Son Seok-hee",
-                nick: "StarDust",
-                nacionalidade: { 
-                    id: "1",
-                    nome: "kr",
-                    status: "Ativo"
-                },
-                caminhoRelativo: "./assets/img/players/stardust.png",
-                caminhoAbsoluto: "./assets/img/players/stardust.png",
-                bagre: 0,
-                status: "Ativo"
-            },
-            {
                 id: "1",
                 MVP: 0,
                 role: {
@@ -171,6 +144,33 @@ export class PlayerMockService {
                 caminhoRelativo: "./assets/img/players/zay.png",
                 caminhoAbsoluto: "./assets/img/players/zay.png",
                 bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "6",
+                MVP: 0,
+                role: {
+                    descricao: "coach",
+                    id: "f",
+                    nome: "coach",
+                    status: "Ativo"
+                },
+                pontuacao: 92,
+                ultimaPontuacao: 92,
+                time: "losgrandes",
+                categoriaJogador: "God",
+                nacionalidadeId: "1",
+                roleId: "f",
+                nome: "Son Seok-hee",
+                nick: "StarDust",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "kr",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/stardust.png",
+                caminhoAbsoluto: "./assets/img/players/stardust.png",
+                bagre: 0,
                 status: "Ativo"
             }
         ],

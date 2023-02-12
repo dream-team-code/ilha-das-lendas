@@ -10,7 +10,14 @@ import { PlayerMockService } from 'src/app/services/player-mock.service';
 })
 export class DisplayCardsComponent implements OnInit {
 
-  public players$: Observable<Jogador[]> = this.playerService.getTeamPlayers("losgrandes");  
+  public coach!: Jogador;
+
+  public players$: Observable<Jogador[]> = this.playerService.getTeamPlayers("losgrandes").pipe(map(res => {
+      
+    this.coach = res.splice(res.length - 1)[0];
+
+    return res
+  }))  
 
   constructor(private playerService: PlayerMockService) { }
 
