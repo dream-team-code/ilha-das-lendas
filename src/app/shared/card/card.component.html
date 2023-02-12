@@ -1,12 +1,12 @@
 <div class="card mat-typography">
-    <img src="./assets/img/borders/90-border.png" class="card__border" alt="">
-    <span class="card__value">95</span>
-    <span class="card__nick">Ranger</span>
-    <span class="card__name">Filipe Barrios</span>
-    <img class="card__role" src="./assets/img/roles/jg.svg"/>   
-    <img src="https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image" class="card__flag" alt="logo">
-    <img src="./assets/img/logo.png" class="card__logo" alt="logo">    
+    <img [src]="'./assets/img/borders/' + player.categoria +  '.png'" class="card__border" alt="">
+    <span class="card__value">{{ player.pontos || '--' }}</span>
+    <span class="card__nick">{{ player.nick || '--' }}</span>
+    <span class="card__name">{{ player.nome || '--' }}</span>
+    <img class="card__role" [src]="'./assets/img/roles/' + player.role + '.svg'"/>   
+    <img [src]=" player.pais === 'br' ? 'https://www.curitiba.pr.leg.br/atividade-parlamentar/legislacao/imagens/bandeira-do-brasil.png/image' : 'https://s3.static.brasilescola.uol.com.br/be/2022/11/bandeira-da-coreia-do-sul.jpg'" class="card__flag" alt="logo">
+    <img [src]="'./assets/img/teams/' + player.time + '.png'" class="card__logo" alt="logo">    
     <div class="card__container">        
-      <img class="card__player-img" src="./assets/img/ranger.png" alt="player"/>   
+      <img class="card__player-img" [src]="'./assets/img/players/' + player.imagem + '.png'" alt="player"/>   
     </div>
 </div>

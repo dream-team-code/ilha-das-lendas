@@ -1,32 +1,32 @@
 <div class="c-display">
     <div class="c-display__title-box">        
         <h1 class="c-display__title">
-            <span>1</span>
-            <img class="c-display__title-logo" src="./assets/img/logo.png">
+            <span>3º</span>
+            <img class="c-display__title-logo" src="./assets/img/teams/losgrandes.png">
             <span>Los Grandes 88</span></h1>
     </div>
     <div class="c-display__cards">
         
         <div class="c-display__coach-wrapper">
-            <app-card class="c-display__card c-display__card--coach"></app-card>
+            <app-card [player]="coach" class="c-display__card c-display__card--coach"></app-card>
         </div>
 
-        <div class="c-display__card-wrapper" *ngFor="let card of [1, 2, 3, 4, 5] index as i" [ngClass]="{'c-display__card-wrapper--upper': i === 1}">
+        <div class="c-display__card-wrapper" *ngFor="let card of cards index as i" [ngClass]="{'c-display__card-wrapper--upper': i === 1}">
             <div class="c-display__card-icons">
                 <div class="c-display__variable">
-                    <img src="./assets/img/up-icon.svg" alt="">
-                    <span>10</span>
+                    <img [src]=" card.diff >= 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="">
+                    <span>{{ card.diff }}</span>
                 </div>
                 <div class="c-display__mvp">
                     <img src="./assets/img/mvp-icon.svg"  alt="">
-                    <span>1</span>
+                    <span>{{ card.mvp }}</span>
                 </div>
                 <div class="c-display__bagre">
                     <img src="./assets/img/bagre-icon.svg"  alt="">
-                    <span>3</span>
+                    <span>{{ card.bagre }}</span>
                 </div>
             </div>
-            <app-card class="c-display__card"></app-card>
+            <app-card [player]="card" class="c-display__card"></app-card>
         </div>
     </div>
 </div>

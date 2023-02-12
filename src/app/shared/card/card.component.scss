@@ -68,9 +68,11 @@
     &__name {
         position: absolute;
         color: white;
-        font-size: 10px;
+        font-size: 9px;
         bottom: 21%;
         z-index: 20;
+        width: 81%;
+        text-align: center;
         left: 50%;
         transform: translateX(-50%);
     }
