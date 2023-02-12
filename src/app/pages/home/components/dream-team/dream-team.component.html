@@ -17,6 +17,6 @@
     </div>
 
     <div class="c-dream-team__list">
-        <app-card *ngFor="let card of [1, 2, 3, 4, 5, 6]"></app-card>
+        <app-card [player]="card" class="c-dream-team__card" *ngFor="let card of cards"></app-card>
     </div>
 </div>
