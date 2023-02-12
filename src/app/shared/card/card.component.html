@@ -1,12 +1,12 @@
 <div class="card mat-typography">
-    <img [src]="'./assets/img/borders/' + player.categoria +  '.png'" class="card__border" alt="">
+    <img [src]="'./assets/img/borders/' + player.categoria +  '.png'" class="card__border" alt="" draggable="false">
     <span class="card__value">{{ player.pontos || '--' }}</span>
     <span class="card__nick">{{ player.nick || '--' }}</span>
     <span class="card__name">{{ player.nome || '--' }}</span>
-    <img class="card__role" [src]="'./assets/img/roles/' + player.role + '.svg'"/>   
-    <img [src]="'./assets/img/flags/' + player.pais + '.jpg'" class="card__flag" alt="logo">
-    <img [src]="'./assets/img/teams/' + player.time + '.png'" class="card__logo" alt="logo">    
+    <img class="card__role" [src]="'./assets/img/roles/' + player.role + '.svg'" draggable="false"/>   
+    <img [src]="'./assets/img/flags/' + player.pais + '.jpg'" class="card__flag" alt="logo" draggable="false">
+    <img [src]="'./assets/img/teams/' + player.time + '.png'" class="card__logo" alt="logo" draggable="false">    
     <div class="card__container">        
-      <img class="card__player-img" [src]="'./assets/img/players/' + player.imagem + '.png'" alt="player"/>   
+      <img class="card__player-img" [src]="'./assets/img/players/' + player.imagem + '.png'" alt="player" draggable="false"/>   
     </div>
 </div>

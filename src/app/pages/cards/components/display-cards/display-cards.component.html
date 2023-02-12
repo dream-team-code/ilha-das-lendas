@@ -7,8 +7,7 @@
     </div>
     <div class="c-display__cards">
         
-        <app-card [player]="coach" class="c-display__card"></app-card>
-
+        
         <div class="c-display__card-wrapper" *ngFor="let card of cards index as i">
             <div class="c-display__card-icons">
                 <div *ngIf="card.diff != 0" class="c-display__variable">
@@ -26,5 +25,6 @@
             </div>
             <app-card [player]="card" class="c-display__card"></app-card>
         </div>
+        <app-card [player]="coach" class="c-display__card"></app-card>
     </div>
 </div>
