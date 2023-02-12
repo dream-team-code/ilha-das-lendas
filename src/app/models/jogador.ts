@@ -11,10 +11,13 @@ export interface Jogador {
     ultimaPontuacao: number
     MVP: number
     bagre: number
-    categoriaJogador: string
+    time: string
+    categoriaJogador: category
     status: string
     caminhoRelativo: string
     caminhoAbsoluto: string
     role: Role
     nacionalidade: Nacionalidade
 }
+
+export type category = 'God' | 'Bom' | 'Mediano' | 'Bagre' | 'Academy'

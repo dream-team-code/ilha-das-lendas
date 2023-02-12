@@ -6,17 +6,15 @@
             <span>Los Grandes 88</span></h1>
     </div>
     <div class="c-display__cards">
-        
-        
-        <div class="c-display__card-wrapper" *ngFor="let card of cards index as i">
+        <div class="c-display__card-wrapper" *ngFor="let card of players$ | async index as i">
             <div class="c-display__card-icons">
-                <div *ngIf="card.diff != 0" class="c-display__variable">
-                    <img [src]=" card.diff > 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="" draggable="false">
-                    <span>{{ card.diff }}</span>
+                <div *ngIf="card.ultimaPontuacao - card.pontuacao != 0" class="c-display__variable">
+                    <img [src]="card.ultimaPontuacao - card.pontuacao > 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="" draggable="false">
+                    <span>{{ card.ultimaPontuacao - card.pontuacao  }}</span>
                 </div>
                 <div class="c-display__mvp">
                     <img src="./assets/img/mvp-icon.svg"  alt="" draggable="false">
-                    <span>{{ card.mvp }}</span>
+                    <span>{{ card.MVP }}</span>
                 </div>
                 <div class="c-display__bagre">
                     <img src="./assets/img/bagre-icon.svg"  alt="" draggable="false">
