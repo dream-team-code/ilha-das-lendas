@@ -9,6 +9,7 @@ export class RowTableComponent implements OnInit {
 
   @Input() public isHeader: boolean = false;
   @Input() public team: any | undefined = undefined;
+  @Input() public position!: number;
 
   constructor() { }
 

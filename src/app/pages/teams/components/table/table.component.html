@@ -1,4 +1,4 @@
 <section class="c-table">
     <app-row-table [isHeader]="true"></app-row-table>
-    <app-row-table *ngFor="let team of teams" [team]="team"></app-row-table>
+    <app-row-table [position]="i + 1" *ngFor="let team of (teams$ | async) index as i" [team]="team"></app-row-table>
 </section>
