@@ -20,8 +20,8 @@ export class PlayerMockService {
                     nome: "top",
                     status: "Ativo"
                 },
-                pontuacao: 91,
-                ultimaPontuacao: 93,
+                pontuacao: 93,
+                ultimaPontuacao: 91,
                 time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
@@ -47,8 +47,8 @@ export class PlayerMockService {
                     nome: "jg",
                     status: "Ativo"
                 },
-                pontuacao: 90,
-                ultimaPontuacao: 89,
+                pontuacao: 91,
+                ultimaPontuacao: 90,
                 time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "2",
@@ -75,7 +75,7 @@ export class PlayerMockService {
                     status: "Ativo"
                 },
                 pontuacao: 90,
-                ultimaPontuacao: 92,
+                ultimaPontuacao: 90,
                 time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
@@ -94,15 +94,15 @@ export class PlayerMockService {
             },
             {
                 id: "4",
-                MVP: 2,
+                MVP: 3,
                 role: {
                     descricao: "adc",
                     id: 'd',
                     nome: "adc",
                     status: "Ativo"
                 },
-                pontuacao: 89,
-                ultimaPontuacao: 80,
+                pontuacao: 91,
+                ultimaPontuacao: 89,
                 time: "los-grandes",
                 categoriaJogador: "Bom",
                 nacionalidadeId: "",
@@ -128,8 +128,8 @@ export class PlayerMockService {
                     nome: "sup",
                     status: "Ativo"
                 },
-                pontuacao: 82,
-                ultimaPontuacao: 71,
+                pontuacao: 86,
+                ultimaPontuacao: 82,
                 time: "los-grandes",
                 categoriaJogador: "Bom",
                 nacionalidadeId: "2",
