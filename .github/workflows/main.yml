@@ -30,5 +30,4 @@ jobs:
         server: ${{ secrets.ftp_host }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        publish_dir: dist/ilha-das-lendas
         server-dir: public_html/teste/
