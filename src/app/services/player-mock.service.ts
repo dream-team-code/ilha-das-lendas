@@ -22,7 +22,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 91,
                 ultimaPontuacao: 93,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
                 roleId: "a",
@@ -49,7 +49,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 90,
                 ultimaPontuacao: 89,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "2",
                 roleId: "b",
@@ -76,7 +76,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 90,
                 ultimaPontuacao: 92,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
                 roleId: "c",
@@ -103,7 +103,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 89,
                 ultimaPontuacao: 80,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "Bom",
                 nacionalidadeId: "",
                 roleId: "",
@@ -130,7 +130,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 82,
                 ultimaPontuacao: 71,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "Bom",
                 nacionalidadeId: "2",
                 roleId: "e",
@@ -157,7 +157,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 92,
                 ultimaPontuacao: 92,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
                 roleId: "f",
@@ -244,7 +244,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 90,
                 ultimaPontuacao: 92,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
                 roleId: "c",
@@ -325,7 +325,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 92,
                 ultimaPontuacao: 92,
-                time: "losgrandes",
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
                 roleId: "f",
@@ -347,7 +347,7 @@ export class PlayerMockService {
 
     getTeamPlayers(teamAlias: string): Observable<Jogador[]> {
         return of(this.players)
-            .pipe(map(({pagina}) => pagina))
+            .pipe(map(({pagina}) => pagina.filter(pag => pag.time === teamAlias)))
     }
 
     getDreamTeam(): Observable<Jogador[]> {

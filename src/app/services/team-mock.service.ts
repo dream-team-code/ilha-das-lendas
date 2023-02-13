@@ -12,36 +12,30 @@ export class TeamMockService {
     private teams: Response<Time> = {
         pagina: [
             {
-                id: "1",
-                nome: "Red Canids",
-                media: 89,               
-                jogadores: [],
-                caminhoRelativo: "red.png",
-                caminhoAbsoluto: "red.png",
-                status: "Ativo"
-            },
-            {
                 id: "3",
                 nome: "Los Grandes",
-                media: 88,               
+                alias: 'los-grandes',
+                media: 90,               
                 jogadores: [],
-                caminhoRelativo: "losgrandes.png",
-                caminhoAbsoluto: "losgrandes.png",
+                caminhoRelativo: "los-grandes.png",
+                caminhoAbsoluto: "los-grandes.png",
                 status: "Ativo"
             },
             {
-                id: "5",
-                nome: "LOUD",
-                media: 86,               
+                id: "1",
+                nome: "Red Canids",
+                alias: 'red-canids',
+                media: 88,               
                 jogadores: [],
-                caminhoRelativo: "loud.png",
-                caminhoAbsoluto: "loud.png",
+                caminhoRelativo: "red-canids.png",
+                caminhoAbsoluto: "red-canids.png",
                 status: "Ativo"
             },
             {
                 id: "9",
                 nome: "Kabum",
-                media: 85,               
+                alias: 'kabum',
+                media: 86,               
                 jogadores: [],
                 caminhoRelativo: "kabum.png",
                 caminhoAbsoluto: "kabum.png",
@@ -50,16 +44,28 @@ export class TeamMockService {
             {
                 id: "7",
                 nome: "Fluxo",
-                media: 79,               
+                alias: 'fluxo',
+                media: 82,               
                 jogadores: [],
                 caminhoRelativo: "fluxo.png",
                 caminhoAbsoluto: "fluxo.png",
                 status: "Ativo"
             },
             {
+                id: "5",
+                nome: "LOUD",
+                alias: 'loud',
+                media: 81,               
+                jogadores: [],
+                caminhoRelativo: "loud.png",
+                caminhoAbsoluto: "loud.png",
+                status: "Ativo"
+            },
+            {
                 id: "4",
                 nome: "INTZ",
-                media: 77,               
+                alias: 'intz',
+                media: 76,               
                 jogadores: [],
                 caminhoRelativo: "intz.png",
                 caminhoAbsoluto: "intz.png",
@@ -68,34 +74,38 @@ export class TeamMockService {
             {
                 id: "10",
                 nome: "FURIA",
-                media: 75,               
+                alias: 'furia',
+                media: 76,               
                 jogadores: [],
                 caminhoRelativo: "furia.png",
                 caminhoAbsoluto: "furia.png",
                 status: "Ativo"
             },
             {
-                id: "2",
-                nome: "Pain Gaming",
-                media: 73,               
-                jogadores: [],
-                caminhoRelativo: "pain.png",
-                caminhoAbsoluto: "pain.png",
-                status: "Ativo"
-            },
-            {
                 id: "8",
                 nome: "Liberty",
-                media: 72,               
+                alias: 'liberty',
+                media: 74,               
                 jogadores: [],
                 caminhoRelativo: "liberty.png",
                 caminhoAbsoluto: "liberty.png",
                 status: "Ativo"
             },
             {
+                id: "2",
+                nome: "Pain Gaming",
+                alias: 'pain',
+                media: 72,               
+                jogadores: [],
+                caminhoRelativo: "pain.png",
+                caminhoAbsoluto: "pain.png",
+                status: "Ativo"
+            },
+            {
                 id: "6",
                 nome: "Vivo Keyd",
-                media: 68,               
+                alias: 'keyd',
+                media: 62,               
                 jogadores: [],
                 caminhoRelativo: "keyd.png",
                 caminhoAbsoluto: "keyd.png",
