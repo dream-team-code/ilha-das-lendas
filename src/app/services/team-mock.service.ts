@@ -119,4 +119,9 @@ export class TeamMockService {
         return of(this.teams)
             .pipe(map(({pagina}) => pagina))
     }
+
+    getByAlias(teamAlias: string): Observable<Time> {
+        return of(this.teams)
+            .pipe(map(({pagina}) => pagina.filter(pag => pag.alias === teamAlias)[0]))
+    }
 }
