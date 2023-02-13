@@ -172,7 +172,171 @@ export class PlayerMockService {
                 caminhoAbsoluto: "./assets/img/players/stardust.png",
                 bagre: 0,
                 status: "Ativo"
-            }
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "top",
+                    id: 'a',
+                    nome: "top",
+                    status: "Ativo"
+                },
+                pontuacao: 85,
+                ultimaPontuacao: 85,
+                time: "red-canids",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Felipe Boal",
+                nick: "Boal",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/Boal.png",
+                caminhoAbsoluto: "./assets/img/players/Boal.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "mid",
+                    id: 'a',
+                    nome: "mid",
+                    status: "Ativo"
+                },
+                pontuacao: 82,
+                ultimaPontuacao: 84,
+                time: "red-canids",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Adriano Perassoli",
+                nick: "Avenger",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/Avenger.png",
+                caminhoAbsoluto: "./assets/img/players/Avenger.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "jg",
+                    id: 'a',
+                    nome: "jg",
+                    status: "Ativo"
+                },
+                pontuacao: 91,
+                ultimaPontuacao: 91,
+                time: "red-canids",
+                categoriaJogador: "God",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "GABRIEL LEMOS",
+                nick: "Aegis",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/aegis.png",
+                caminhoAbsoluto: "./assets/img/players/aegis.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 3,
+                role: {
+                    descricao: "adc",
+                    id: 'a',
+                    nome: "adc",
+                    status: "Ativo"
+                },
+                pontuacao: 92,
+                ultimaPontuacao: 93,
+                time: "red-canids",
+                categoriaJogador: "God",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Alexandre Santos",
+                nick: "Titan",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/titan.png",
+                caminhoAbsoluto: "./assets/img/players/titan.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "sup",
+                    id: 'a',
+                    nome: "sup",
+                    status: "Ativo"
+                },
+                pontuacao: 91,
+                ultimaPontuacao: 91,
+                time: "red-canids",
+                categoriaJogador: "God",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Wonyoung Choi",
+                nick: "Kuri",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "kr",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/kuri.png",
+                caminhoAbsoluto: "./assets/img/players/kuri.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "coach",
+                    id: 'a',
+                    nome: "coach",
+                    status: "Ativo"
+                },
+                pontuacao: 86,
+                ultimaPontuacao: 86,
+                time: "red-canids",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Calisto Coelho",
+                nick: "Coelho",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/coelho.png",
+                caminhoAbsoluto: "./assets/img/players/coelho.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+
+
         ],
         dados: {} as Dados
     }
