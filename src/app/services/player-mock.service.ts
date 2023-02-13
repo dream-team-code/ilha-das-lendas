@@ -374,33 +374,6 @@ export class PlayerMockService {
                     status: "Ativo"
                 },
                 pontuacao: 85,
-                ultimaPontuacao: 86,
-                time: "kabum",
-                categoriaJogador: "Bom",
-                nacionalidadeId: "1",
-                roleId: "a",
-                nome: "GYUJUN HAN",
-                nick: "Yuri",
-                nacionalidade: { 
-                    id: "1",
-                    nome: "br",
-                    status: "Ativo"
-                },
-                caminhoRelativo: "./assets/img/players/yuri.png",
-                caminhoAbsoluto: "./assets/img/players/yuri.png",
-                bagre: 1,
-                status: "Ativo"
-            },
-            {
-                id: "1",
-                MVP: 0,
-                role: {
-                    descricao: "mid",
-                    id: 'a',
-                    nome: "mid",
-                    status: "Ativo"
-                },
-                pontuacao: 85,
                 ultimaPontuacao: 82,
                 time: "kabum",
                 categoriaJogador: "Bom",
@@ -415,6 +388,33 @@ export class PlayerMockService {
                 },
                 caminhoRelativo: "./assets/img/players/scary.png",
                 caminhoAbsoluto: "./assets/img/players/scary.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "mid",
+                    id: 'a',
+                    nome: "mid",
+                    status: "Ativo"
+                },
+                pontuacao: 85,
+                ultimaPontuacao: 86,
+                time: "kabum",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "GYUJUN HAN",
+                nick: "Yuri",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/yuri.png",
+                caminhoAbsoluto: "./assets/img/players/yuri.png",
                 bagre: 1,
                 status: "Ativo"
             },
