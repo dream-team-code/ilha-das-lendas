@@ -14,6 +14,7 @@ export class TeamMockService {
             {
                 id: "3",
                 nome: "Los Grandes",
+                alias: 'los-grandes',
                 media: 90,               
                 jogadores: [],
                 caminhoRelativo: "losgrandes.png",
@@ -23,6 +24,7 @@ export class TeamMockService {
             {
                 id: "1",
                 nome: "Red Canids",
+                alias: 'red-canids',
                 media: 88,               
                 jogadores: [],
                 caminhoRelativo: "red.png",
@@ -32,6 +34,7 @@ export class TeamMockService {
             {
                 id: "9",
                 nome: "Kabum",
+                alias: 'kabum',
                 media: 86,               
                 jogadores: [],
                 caminhoRelativo: "kabum.png",
@@ -41,6 +44,7 @@ export class TeamMockService {
             {
                 id: "7",
                 nome: "Fluxo",
+                alias: 'fluxo',
                 media: 82,               
                 jogadores: [],
                 caminhoRelativo: "fluxo.png",
@@ -50,6 +54,7 @@ export class TeamMockService {
             {
                 id: "5",
                 nome: "LOUD",
+                alias: 'loud',
                 media: 81,               
                 jogadores: [],
                 caminhoRelativo: "loud.png",
@@ -59,6 +64,7 @@ export class TeamMockService {
             {
                 id: "4",
                 nome: "INTZ",
+                alias: 'intz',
                 media: 76,               
                 jogadores: [],
                 caminhoRelativo: "intz.png",
@@ -68,6 +74,7 @@ export class TeamMockService {
             {
                 id: "10",
                 nome: "FURIA",
+                alias: 'furia',
                 media: 76,               
                 jogadores: [],
                 caminhoRelativo: "furia.png",
@@ -77,6 +84,7 @@ export class TeamMockService {
             {
                 id: "8",
                 nome: "Liberty",
+                alias: 'liberty',
                 media: 74,               
                 jogadores: [],
                 caminhoRelativo: "liberty.png",
@@ -86,6 +94,7 @@ export class TeamMockService {
             {
                 id: "2",
                 nome: "Pain Gaming",
+                alias: 'pain',
                 media: 72,               
                 jogadores: [],
                 caminhoRelativo: "pain.png",
@@ -95,6 +104,7 @@ export class TeamMockService {
             {
                 id: "6",
                 nome: "Vivo Keyd",
+                alias: 'keyd',
                 media: 62,               
                 jogadores: [],
                 caminhoRelativo: "keyd.png",

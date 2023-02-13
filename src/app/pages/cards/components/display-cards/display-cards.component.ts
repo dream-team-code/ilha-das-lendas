@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, Subscription } from 'rxjs';
 import { Jogador } from 'src/app/models/jogador';
 import { PlayerMockService } from 'src/app/services/player-mock.service';
 
@@ -10,11 +11,20 @@ import { PlayerMockService } from 'src/app/services/player-mock.service';
 })
 export class DisplayCardsComponent implements OnInit {
 
-  public players$: Observable<Jogador[]> = this.playerService.getTeamPlayers("losgrandes")
+  public alias: string = '';
+  public players$: Observable<Jogador[]> = {} as Observable<Jogador[]>;
+  public routeSub: Subscription;
 
-  constructor(private playerService: PlayerMockService) { }
+  constructor(private playerService: PlayerMockService,
+              private activatedRoute: ActivatedRoute) {
+                this.routeSub = this.activatedRoute.params.subscribe(params => {
+                  this.alias = params['id'];
+                  this.players$ = this.playerService.getTeamPlayers(this.alias);
+                });
+               }
 
   ngOnInit(): void {
+    
   }
 
 }
