@@ -12,7 +12,7 @@ export class TeamMockService {
     private teams: Response<Time> = {
         pagina: [
             {
-                id: "3",
+                id: "1",
                 nome: "Los Grandes",
                 alias: 'los-grandes',
                 media: 90,               
@@ -22,7 +22,7 @@ export class TeamMockService {
                 status: "Ativo"
             },
             {
-                id: "1",
+                id: "2",
                 nome: "Red Canids",
                 alias: 'red-canids',
                 media: 88,               
@@ -32,7 +32,7 @@ export class TeamMockService {
                 status: "Ativo"
             },
             {
-                id: "9",
+                id: "3",
                 nome: "Kabum",
                 alias: 'kabum',
                 media: 86,               
@@ -42,7 +42,7 @@ export class TeamMockService {
                 status: "Ativo"
             },
             {
-                id: "7",
+                id: "4",
                 nome: "Fluxo",
                 alias: 'fluxo',
                 media: 82,               
@@ -62,7 +62,7 @@ export class TeamMockService {
                 status: "Ativo"
             },
             {
-                id: "4",
+                id: "6",
                 nome: "INTZ",
                 alias: 'intz',
                 media: 76,               
@@ -72,7 +72,7 @@ export class TeamMockService {
                 status: "Ativo"
             },
             {
-                id: "10",
+                id: "7",
                 nome: "FURIA",
                 alias: 'furia',
                 media: 76,               
@@ -92,7 +92,7 @@ export class TeamMockService {
                 status: "Ativo"
             },
             {
-                id: "2",
+                id: "9",
                 nome: "Pain Gaming",
                 alias: 'pain',
                 media: 72,               
@@ -102,7 +102,7 @@ export class TeamMockService {
                 status: "Ativo"
             },
             {
-                id: "6",
+                id: "10",
                 nome: "Vivo Keyd",
                 alias: 'keyd',
                 media: 62,               
@@ -118,5 +118,10 @@ export class TeamMockService {
     getAll(): Observable<Time[]> {
         return of(this.teams)
             .pipe(map(({pagina}) => pagina))
+    }
+
+    getByAlias(teamAlias: string): Observable<Time> {
+        return of(this.teams)
+            .pipe(map(({pagina}) => pagina.filter(pag => pag.alias === teamAlias)[0]))
     }
 }
