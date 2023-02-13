@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { Jogador } from 'src/app/models/jogador';
 import { PlayerMockService } from 'src/app/services/player-mock.service';
 
@@ -10,14 +10,7 @@ import { PlayerMockService } from 'src/app/services/player-mock.service';
 })
 export class DisplayCardsComponent implements OnInit {
 
-  public coach!: Jogador;
-
-  public players$: Observable<Jogador[]> = this.playerService.getTeamPlayers("losgrandes").pipe(map(res => {
-      
-    this.coach = res.splice(res.length - 1)[0];
-
-    return res
-  }))  
+  public players$: Observable<Jogador[]> = this.playerService.getTeamPlayers("losgrandes")
 
   constructor(private playerService: PlayerMockService) { }
 

@@ -7,7 +7,7 @@
     </div>
     <div class="c-display__cards">
         <div class="c-display__card-wrapper" *ngFor="let card of players$ | async index as i">
-            <div class="c-display__card-icons">
+            <div class="c-display__card-icons" *ngIf="card.role.nome != 'coach'">
                 <div *ngIf="card.pontuacao - card.ultimaPontuacao != 0" class="c-display__variable">
                     <img [src]="card.pontuacao - card.ultimaPontuacao > 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="" draggable="false">
                     <span>{{ (card.pontuacao - card.ultimaPontuacao) }}</span>
@@ -23,6 +23,5 @@
             </div>
             <app-card [player]="card" class="c-display__card"></app-card>
         </div>
-        <app-card [player]="coach" class="c-display__card"></app-card>
     </div>
 </div>
