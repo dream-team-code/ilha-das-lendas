@@ -8,4 +8,5 @@ export interface Time {
     caminhoAbsoluto: string
     status: string
     jogadores: Jogador[]
+    alias: string
 }

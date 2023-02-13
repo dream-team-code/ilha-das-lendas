@@ -13,89 +13,99 @@ export class TeamMockService {
         pagina: [
             {
                 id: "1",
-                nome: "Red Canids",
-                media: 89,               
+                nome: "Los Grandes",
+                alias: 'los-grandes',
+                media: 90,               
                 jogadores: [],
-                caminhoRelativo: "red.png",
-                caminhoAbsoluto: "red.png",
+                caminhoRelativo: "los-grandes.png",
+                caminhoAbsoluto: "los-grandes.png",
+                status: "Ativo"
+            },
+            {
+                id: "2",
+                nome: "Red Canids",
+                alias: 'red-canids',
+                media: 88,               
+                jogadores: [],
+                caminhoRelativo: "red-canids.png",
+                caminhoAbsoluto: "red-canids.png",
                 status: "Ativo"
             },
             {
                 id: "3",
-                nome: "Los Grandes",
-                media: 88,               
-                jogadores: [],
-                caminhoRelativo: "losgrandes.png",
-                caminhoAbsoluto: "losgrandes.png",
-                status: "Ativo"
-            },
-            {
-                id: "5",
-                nome: "LOUD",
-                media: 86,               
-                jogadores: [],
-                caminhoRelativo: "loud.png",
-                caminhoAbsoluto: "loud.png",
-                status: "Ativo"
-            },
-            {
-                id: "9",
                 nome: "Kabum",
-                media: 85,               
+                alias: 'kabum',
+                media: 86,               
                 jogadores: [],
                 caminhoRelativo: "kabum.png",
                 caminhoAbsoluto: "kabum.png",
                 status: "Ativo"
             },
             {
-                id: "7",
+                id: "4",
                 nome: "Fluxo",
-                media: 79,               
+                alias: 'fluxo',
+                media: 82,               
                 jogadores: [],
                 caminhoRelativo: "fluxo.png",
                 caminhoAbsoluto: "fluxo.png",
                 status: "Ativo"
             },
             {
-                id: "4",
+                id: "5",
+                nome: "LOUD",
+                alias: 'loud',
+                media: 81,               
+                jogadores: [],
+                caminhoRelativo: "loud.png",
+                caminhoAbsoluto: "loud.png",
+                status: "Ativo"
+            },
+            {
+                id: "6",
                 nome: "INTZ",
-                media: 77,               
+                alias: 'intz',
+                media: 76,               
                 jogadores: [],
                 caminhoRelativo: "intz.png",
                 caminhoAbsoluto: "intz.png",
                 status: "Ativo"
             },
             {
-                id: "10",
+                id: "7",
                 nome: "FURIA",
-                media: 75,               
+                alias: 'furia',
+                media: 76,               
                 jogadores: [],
                 caminhoRelativo: "furia.png",
                 caminhoAbsoluto: "furia.png",
                 status: "Ativo"
             },
             {
-                id: "2",
-                nome: "Pain Gaming",
-                media: 73,               
-                jogadores: [],
-                caminhoRelativo: "pain.png",
-                caminhoAbsoluto: "pain.png",
-                status: "Ativo"
-            },
-            {
                 id: "8",
                 nome: "Liberty",
-                media: 72,               
+                alias: 'liberty',
+                media: 74,               
                 jogadores: [],
                 caminhoRelativo: "liberty.png",
                 caminhoAbsoluto: "liberty.png",
                 status: "Ativo"
             },
             {
-                id: "6",
+                id: "9",
+                nome: "Pain Gaming",
+                alias: 'pain',
+                media: 72,               
+                jogadores: [],
+                caminhoRelativo: "pain.png",
+                caminhoAbsoluto: "pain.png",
+                status: "Ativo"
+            },
+            {
+                id: "10",
                 nome: "Vivo Keyd",
-                media: 68,               
+                alias: 'keyd',
+                media: 62,               
                 jogadores: [],
                 caminhoRelativo: "keyd.png",
                 caminhoAbsoluto: "keyd.png",
@@ -108,5 +118,10 @@ export class TeamMockService {
     getAll(): Observable<Time[]> {
         return of(this.teams)
             .pipe(map(({pagina}) => pagina))
+    }
+
+    getByAlias(teamAlias: string): Observable<Time> {
+        return of(this.teams)
+            .pipe(map(({pagina}) => pagina.filter(pag => pag.alias === teamAlias)[0]))
     }
 }

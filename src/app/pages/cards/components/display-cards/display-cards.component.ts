@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { map, Observable } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
+import { Observable, Subscription } from 'rxjs';
 import { Jogador } from 'src/app/models/jogador';
+import { Time } from 'src/app/models/time';
 import { PlayerMockService } from 'src/app/services/player-mock.service';
+import { TeamMockService } from 'src/app/services/team-mock.service';
 
 @Component({
   selector: 'app-display-cards',
@@ -10,18 +13,23 @@ import { PlayerMockService } from 'src/app/services/player-mock.service';
 })
 export class DisplayCardsComponent implements OnInit {
 
-  public coach!: Jogador;
+  public alias: string = '';
+  public players$: Observable<Jogador[]> = {} as Observable<Jogador[]>;
+  public routeSub: Subscription;
+  public team$: Observable<Time> = {} as Observable<Time>;
 
-  public players$: Observable<Jogador[]> = this.playerService.getTeamPlayers("losgrandes").pipe(map(res => {
-      
-    this.coach = res.splice(res.length - 1)[0];
-
-    return res
-  }))  
-
-  constructor(private playerService: PlayerMockService) { }
+  constructor(private playerService: PlayerMockService,
+              private activatedRoute: ActivatedRoute,
+              private teamService: TeamMockService) {
+                this.routeSub = this.activatedRoute.params.subscribe(params => {
+                  this.alias = params['id'];
+                  this.players$ = this.playerService.getTeamPlayers(this.alias);
+                  this.team$ = this.teamService.getByAlias(this.alias)
+                });
+               }
 
   ngOnInit(): void {
+    
   }
 
 }

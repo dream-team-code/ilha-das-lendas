@@ -92,6 +92,7 @@
         width: 188px;
         height: 290px;
         display: block;
+        grid-column: 2 / -1;
 
         @media screen and (max-width: 787px) {
             width: 158px;
