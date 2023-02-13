@@ -173,6 +173,7 @@ export class PlayerMockService {
                 bagre: 0,
                 status: "Ativo"
             },
+            //Red
             {
                 id: "1",
                 MVP: 1,
@@ -204,33 +205,6 @@ export class PlayerMockService {
                 id: "1",
                 MVP: 1,
                 role: {
-                    descricao: "mid",
-                    id: 'a',
-                    nome: "mid",
-                    status: "Ativo"
-                },
-                pontuacao: 82,
-                ultimaPontuacao: 84,
-                time: "red-canids",
-                categoriaJogador: "Bom",
-                nacionalidadeId: "1",
-                roleId: "a",
-                nome: "Adriano Perassoli",
-                nick: "Avenger",
-                nacionalidade: { 
-                    id: "1",
-                    nome: "br",
-                    status: "Ativo"
-                },
-                caminhoRelativo: "./assets/img/players/Avenger.png",
-                caminhoAbsoluto: "./assets/img/players/Avenger.png",
-                bagre: 1,
-                status: "Ativo"
-            },
-            {
-                id: "1",
-                MVP: 1,
-                role: {
                     descricao: "jg",
                     id: 'a',
                     nome: "jg",
@@ -252,6 +226,33 @@ export class PlayerMockService {
                 caminhoRelativo: "./assets/img/players/aegis.png",
                 caminhoAbsoluto: "./assets/img/players/aegis.png",
                 bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "mid",
+                    id: 'a',
+                    nome: "mid",
+                    status: "Ativo"
+                },
+                pontuacao: 82,
+                ultimaPontuacao: 84,
+                time: "red-canids",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Adriano Perassoli",
+                nick: "Avenger",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/Avenger.png",
+                caminhoAbsoluto: "./assets/img/players/Avenger.png",
+                bagre: 1,
                 status: "Ativo"
             },
             {
@@ -333,6 +334,332 @@ export class PlayerMockService {
                 caminhoRelativo: "./assets/img/players/coelho.png",
                 caminhoAbsoluto: "./assets/img/players/coelho.png",
                 bagre: 0,
+                status: "Ativo"
+            },
+            //KABUM
+            {
+                id: "1",
+                MVP: 2,
+                role: {
+                    descricao: "top",
+                    id: 'a',
+                    nome: "top",
+                    status: "Ativo"
+                },
+                pontuacao: 92,
+                ultimaPontuacao: 94,
+                time: "kabum",
+                categoriaJogador: "God",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "GYUJUN HAN",
+                nick: "Lonely",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "kr",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/lonely.png",
+                caminhoAbsoluto: "./assets/img/players/lonely.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "jg",
+                    id: 'a',
+                    nome: "jg",
+                    status: "Ativo"
+                },
+                pontuacao: 85,
+                ultimaPontuacao: 86,
+                time: "kabum",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "GYUJUN HAN",
+                nick: "Yuri",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/yuri.png",
+                caminhoAbsoluto: "./assets/img/players/yuri.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "mid",
+                    id: 'a',
+                    nome: "mid",
+                    status: "Ativo"
+                },
+                pontuacao: 85,
+                ultimaPontuacao: 82,
+                time: "kabum",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Artur Scalabrin",
+                nick: "Scary",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/scary.png",
+                caminhoAbsoluto: "./assets/img/players/scary.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 2,
+                role: {
+                    descricao: "adc",
+                    id: 'a',
+                    nome: "adc",
+                    status: "Ativo"
+                },
+                pontuacao: 83,
+                ultimaPontuacao: 83,
+                time: "kabum",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Igor Homem",
+                nick: "Dudstheboy",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/dudstheboy.png",
+                caminhoAbsoluto: "./assets/img/players/dudstheboy.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "sup",
+                    id: 'a',
+                    nome: "sup",
+                    status: "Ativo"
+                },
+                pontuacao: 84,
+                ultimaPontuacao: 81,
+                time: "kabum",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Gabriel Scuro",
+                nick: "Scuro",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/scuro.png",
+                caminhoAbsoluto: "./assets/img/players/scuro.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "coach",
+                    id: 'a',
+                    nome: "coach",
+                    status: "Ativo"
+                },
+                pontuacao: 88,
+                ultimaPontuacao: 88,
+                time: "kabum",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "",
+                nick: "Ti0ben",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/ti0ben.png",
+                caminhoAbsoluto: "./assets/img/players/ti0ben.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            //Fluxo
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "top",
+                    id: 'a',
+                    nome: "top",
+                    status: "Ativo"
+                },
+                pontuacao: 78,
+                ultimaPontuacao: 73,
+                time: "fluxo",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Rodrigo Panisa",
+                nick: "Tay",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/tay.png",
+                caminhoAbsoluto: "./assets/img/players/tay.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "jg",
+                    id: 'a',
+                    nome: "jg",
+                    status: "Ativo"
+                },
+                pontuacao: 83,
+                ultimaPontuacao: 76,
+                time: "fluxo",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Pedro Cavalcante",
+                nick: "Disamis",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/disamis.png",
+                caminhoAbsoluto: "./assets/img/players/disamis.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 2,
+                role: {
+                    descricao: "mid",
+                    id: 'a',
+                    nome: "mid",
+                    status: "Ativo"
+                },
+                pontuacao: 86,
+                ultimaPontuacao: 81,
+                time: "fluxo",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Bruno Felbergue",
+                nick: "Hauz",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/hauz.png",
+                caminhoAbsoluto: "./assets/img/players/hauz.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "adc",
+                    id: 'a',
+                    nome: "adc",
+                    status: "Ativo"
+                },
+                pontuacao: 82,
+                ultimaPontuacao: 82,
+                time: "fluxo",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Diego Amaral",
+                nick: "Brance",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/brance.png",
+                caminhoAbsoluto: "./assets/img/players/brance.png",
+                bagre: 2,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "sup",
+                    id: 'a',
+                    nome: "sup",
+                    status: "Ativo"
+                },
+                pontuacao: 81,
+                ultimaPontuacao: 81,
+                time: "fluxo",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Gabriel Dzelme",
+                nick: "Jojo",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/jojo.png",
+                caminhoAbsoluto: "./assets/img/players/jojo.png",
+                bagre: 1,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "coach",
+                    id: 'a',
+                    nome: "coach",
+                    status: "Ativo"
+                },
+                pontuacao: 75,
+                ultimaPontuacao: 75,
+                time: "fluxo",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "",
+                nick: "Turtle",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/jojo.png",
+                caminhoAbsoluto: "./assets/img/players/jojo.png",
+                bagre: 1,
                 status: "Ativo"
             },
 
