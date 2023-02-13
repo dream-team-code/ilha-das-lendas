@@ -22,9 +22,9 @@ export class CardComponent implements OnInit {
 }
 
 export enum CATEGORIA_BORDER {
-  "God" = "90-border",
-  "Bom" = "80-border",
-  "Mediano" = "70-border",
-  "Bagre" = "60-border",
-  "Academy" = "50-border",
+  "God" = "border-90",
+  "Bom" = "border-80",
+  "Mediano" = "border-70",
+  "Bagre" = "border-60",
+  "Academy" = "border-50",
 }

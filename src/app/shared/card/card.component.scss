@@ -7,6 +7,12 @@
     display: flex;
     align-items: center;
 
+    &--border-90 { filter: drop-shadow(0 3px 8px #eea150); }
+    &--border-80 { filter: drop-shadow(0 3px 8px #d66bdf); }
+    &--border-70 { filter: drop-shadow(0 3px 8px #00b987); }
+    &--border-60 { filter: drop-shadow(0 3px 8px #ad9340); }
+    &--border-50 { filter: drop-shadow(0 3px 8px #c16853); }
+
     &__player-img {
         max-width: 112%;
         display: block;
@@ -20,15 +26,15 @@
         position: absolute;
         top: 0;
         left: 50%;
-        width: 100%;
         height: 100%;
         z-index: 10;
         transform: translateX(-50%);
 
-        &--50 { width: 89%; }
-        &--60 { width: 93%; }
-        &--70 { width: 97%; }
-        &--80 { width: 98%; }
+        &__-90 { width: 100%; }
+        &__-80 { width: 98%; }
+        &__-70 { width: 97%; }
+        &__-60 { width: 93%; }
+        &__-50 { width: 89%; }
     }
     
     &__container {

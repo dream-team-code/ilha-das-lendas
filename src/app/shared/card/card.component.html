@@ -1,5 +1,5 @@
-<div class="card mat-typography">
-    <img [src]="'./assets/img/borders/' + categoryBorder[player.categoriaJogador] + '.png'" class="card__border" alt="">
+<div [class]="'mat-typography card card--' +  categoryBorder[player.categoriaJogador]">
+    <img [src]="'./assets/img/borders/' + categoryBorder[player.categoriaJogador] + '.png'" [class]="'card__border card__'   + categoryBorder[player.categoriaJogador]" alt="">
     <span class="card__value">{{ player.pontuacao || '--' }}</span>
     <span class="card__nick">{{ player.nick || '--' }}</span>
     <span class="card__name">{{ player.nome || '--' }}</span>
