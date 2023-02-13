@@ -32,7 +32,8 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/Web.config"
+              "src/Web.config",
+              "src/.htaccess"
             ],
             "styles": [
               "src/styles.scss"
