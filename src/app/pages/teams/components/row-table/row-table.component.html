@@ -7,7 +7,7 @@
 <div class="c-row__divider-box">
     <mat-divider class="c-row__divider" *ngIf="!isHeader && team"></mat-divider>
 </div>
-<div class="c-row c-content" *ngIf="!isHeader && team">
+<div class="c-row c-content" *ngIf="!isHeader && team" [routerLink]="['/cartas/' + team.nome]">
     <h3>{{ position }}º</h3>
     <div class="c-team">
         <img class="c-team__img" [src]="'./assets/img/teams/' + team.caminhoRelativo" alt="">
@@ -15,7 +15,7 @@
     </div>
     <h3>{{ team.media }}</h3>
     <!-- <button mat-raised-button color="warn">VER <mat-icon>filter_frames</mat-icon></button> -->
-    <button class="c-row__button" mat-mini-fab color="warn" routerLink="/cartas/team.nome">
+    <button class="c-row__button" mat-mini-fab color="warn">
         <mat-icon>keyboard_arrow_right</mat-icon>
     </button>
 </div>
