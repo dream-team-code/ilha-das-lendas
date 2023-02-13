@@ -17,8 +17,8 @@ export class TeamMockService {
                 alias: 'los-grandes',
                 media: 90,               
                 jogadores: [],
-                caminhoRelativo: "losgrandes.png",
-                caminhoAbsoluto: "losgrandes.png",
+                caminhoRelativo: "los-grandes.png",
+                caminhoAbsoluto: "los-grandes.png",
                 status: "Ativo"
             },
             {
@@ -27,8 +27,8 @@ export class TeamMockService {
                 alias: 'red-canids',
                 media: 88,               
                 jogadores: [],
-                caminhoRelativo: "red.png",
-                caminhoAbsoluto: "red.png",
+                caminhoRelativo: "red-canids.png",
+                caminhoAbsoluto: "red-canids.png",
                 status: "Ativo"
             },
             {
