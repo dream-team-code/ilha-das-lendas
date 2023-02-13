@@ -27,8 +27,8 @@ jobs:
       if: success()
       uses: SamKirkland/web-deploy@v1
       with:
-        password: ${{ secrets.ftp_password }}
         target-server: ${{ secrets.SSH_SERVER }}
         remote-user: ${{ secrets.SSH_USER }}
         private-ssh-key: ${{ secrets.SSH_KEY }}
+        ssh-port: ${{ secrets.SSH_PORT }}
         destination-path: ~/public_html/teste/
