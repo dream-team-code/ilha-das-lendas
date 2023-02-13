@@ -836,28 +836,28 @@ export class PlayerMockService {
         pagina: [
             {
                 id: "1",
-                MVP: 0,
+                MVP: 1,
                 role: {
                     descricao: "top",
                     id: 'a',
                     nome: "top",
                     status: "Ativo"
                 },
-                pontuacao: 94,
-                ultimaPontuacao: 94,
-                time: "kabum",
+                pontuacao: 93,
+                ultimaPontuacao: 91,
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
                 roleId: "a",
-                nome: "GYUJUN HAN",
-                nick: "Lonely",
+                nome: "SHIN TAE-MIN",
+                nick: "HiRit",
                 nacionalidade: { 
                     id: "1",
                     nome: "kr",
                     status: "Ativo"
                 },
-                caminhoRelativo: "./assets/img/players/lonely.png",
-                caminhoAbsoluto: "./assets/img/players/lonely.png",
+                caminhoRelativo: "./assets/img/players/hirit.png",
+                caminhoAbsoluto: "./assets/img/players/hirit.png",
                 bagre: 0,
                 status: "Ativo"
             },
@@ -871,20 +871,20 @@ export class PlayerMockService {
                     status: "Ativo"
                 },
                 pontuacao: 91,
-                ultimaPontuacao: 91,
-                time: "red-canids",
+                ultimaPontuacao: 90,
+                time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "2",
                 roleId: "b",
-                nome: "GABRIEL LEMOS",
-                nick: "Aegis",
+                nome: "FILIPE BROMBILLA",
+                nick: "Ranger",
                 nacionalidade: { 
                     id: "2",
                     nome: "br",
                     status: "Ativo"
                 },
-                caminhoRelativo: "./assets/img/players/aegis.png",
-                caminhoAbsoluto: "./assets/img/players/aegis.png",
+                caminhoRelativo: "./assets/img/players/ranger.png",
+                caminhoAbsoluto: "./assets/img/players/ranger.png",
                 bagre: 1,
                 status: "Ativo"
             },
@@ -898,7 +898,7 @@ export class PlayerMockService {
                     status: "Ativo"
                 },
                 pontuacao: 90,
-                ultimaPontuacao: 92,
+                ultimaPontuacao: 90,
                 time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
@@ -924,8 +924,8 @@ export class PlayerMockService {
                     nome: "adc",
                     status: "Ativo"
                 },
-                pontuacao: 93,
-                ultimaPontuacao: 93,
+                pontuacao: 92,
+                ultimaPontuacao: 92,
                 time: "red-canids",
                 categoriaJogador: "God",
                 nacionalidadeId: "",
