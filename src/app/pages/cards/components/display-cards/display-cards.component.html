@@ -1,7 +1,7 @@
 <div class="c-display">
     <div class="c-display__title-box">        
         <h1 class="c-display__title">
-            <span>1º</span>
+            <span>{{ (team$ | async)?.id }}º</span>
             <img class="c-display__title-logo" src="./assets/img/teams/{{alias}}.png" draggable="false">
             <span>{{ (team$ | async)?.nome }} - {{ (team$ | async)?.media }}</span></h1>
     </div>

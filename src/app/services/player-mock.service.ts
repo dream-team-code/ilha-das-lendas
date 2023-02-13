@@ -13,7 +13,7 @@ export class PlayerMockService {
         pagina: [
             {
                 id: "1",
-                MVP: 0,
+                MVP: 1,
                 role: {
                     descricao: "top",
                     id: 'a',
@@ -104,7 +104,7 @@ export class PlayerMockService {
                 pontuacao: 91,
                 ultimaPontuacao: 89,
                 time: "los-grandes",
-                categoriaJogador: "Bom",
+                categoriaJogador: "God",
                 nacionalidadeId: "",
                 roleId: "",
                 nome: "LUCAS FENSTERSEIFER",
@@ -155,8 +155,8 @@ export class PlayerMockService {
                     nome: "coach",
                     status: "Ativo"
                 },
-                pontuacao: 92,
-                ultimaPontuacao: 92,
+                pontuacao: 94,
+                ultimaPontuacao: 94,
                 time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
@@ -539,7 +539,7 @@ export class PlayerMockService {
                 pontuacao: 83,
                 ultimaPontuacao: 76,
                 time: "fluxo",
-                categoriaJogador: "Mediano",
+                categoriaJogador: "Bom",
                 nacionalidadeId: "1",
                 roleId: "a",
                 nome: "Pedro Cavalcante",
@@ -566,7 +566,7 @@ export class PlayerMockService {
                 pontuacao: 86,
                 ultimaPontuacao: 81,
                 time: "fluxo",
-                categoriaJogador: "Mediano",
+                categoriaJogador: "Bom",
                 nacionalidadeId: "1",
                 roleId: "a",
                 nome: "Bruno Felbergue",
@@ -593,7 +593,7 @@ export class PlayerMockService {
                 pontuacao: 82,
                 ultimaPontuacao: 82,
                 time: "fluxo",
-                categoriaJogador: "Mediano",
+                categoriaJogador: "Bom",
                 nacionalidadeId: "1",
                 roleId: "a",
                 nome: "Diego Amaral",
@@ -620,7 +620,7 @@ export class PlayerMockService {
                 pontuacao: 81,
                 ultimaPontuacao: 81,
                 time: "fluxo",
-                categoriaJogador: "Mediano",
+                categoriaJogador: "Bom",
                 nacionalidadeId: "1",
                 roleId: "a",
                 nome: "Gabriel Dzelme",
@@ -647,7 +647,7 @@ export class PlayerMockService {
                 pontuacao: 75,
                 ultimaPontuacao: 75,
                 time: "fluxo",
-                categoriaJogador: "Mediano",
+                categoriaJogador: "Bom",
                 nacionalidadeId: "1",
                 roleId: "a",
                 nome: "",
@@ -657,11 +657,175 @@ export class PlayerMockService {
                     nome: "br",
                     status: "Ativo"
                 },
-                caminhoRelativo: "./assets/img/players/jojo.png",
-                caminhoAbsoluto: "./assets/img/players/jojo.png",
+                caminhoRelativo: "./assets/img/players/turtle.png",
+                caminhoAbsoluto: "./assets/img/players/turtle.png",
                 bagre: 1,
                 status: "Ativo"
             },
+            //loud
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "top",
+                    id: 'a',
+                    nome: "top",
+                    status: "Ativo"
+                },
+                pontuacao: 77,
+                ultimaPontuacao: 82,
+                time: "loud",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Leonardo Souza",
+                nick: "Robo",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/Robo.png",
+                caminhoAbsoluto: "./assets/img/players/Robo.png",
+                bagre: 2,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "jg",
+                    id: 'a',
+                    nome: "jg",
+                    status: "Ativo"
+                },
+                pontuacao: 76,
+                ultimaPontuacao: 82,
+                time: "loud",
+                categoriaJogador: "Mediano",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Park Jong-hoon",
+                nick: "Croc",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/Croc.png",
+                caminhoAbsoluto: "./assets/img/players/Croc.png",
+                bagre: 2,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 2,
+                role: {
+                    descricao: "mid",
+                    id: 'a',
+                    nome: "mid",
+                    status: "Ativo"
+                },
+                pontuacao: 85,
+                ultimaPontuacao: 89,
+                time: "loud",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Thiago Sartori",
+                nick: "Tinows",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/tinowns.png",
+                caminhoAbsoluto: "./assets/img/players/tinowns.png",
+                bagre: 2,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "adc",
+                    id: 'a',
+                    nome: "adc",
+                    status: "Ativo"
+                },
+                pontuacao: 91,
+                ultimaPontuacao: 88,
+                time: "loud",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Geomsoo Mun",
+                nick: "Route",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/Route.png",
+                caminhoAbsoluto: "./assets/img/players/Route.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 1,
+                role: {
+                    descricao: "sup",
+                    id: 'a',
+                    nome: "sup",
+                    status: "Ativo"
+                },
+                pontuacao: 84,
+                ultimaPontuacao: 90,
+                time: "loud",
+                categoriaJogador: "Bom",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "Denilson Oliveira",
+                nick: "Ceos",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/Ceos.png",
+                caminhoAbsoluto: "./assets/img/players/Ceos.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+            {
+                id: "1",
+                MVP: 0,
+                role: {
+                    descricao: "coach",
+                    id: 'a',
+                    nome: "coach",
+                    status: "Ativo"
+                },
+                pontuacao: 68,
+                ultimaPontuacao: 68,
+                time: "loud",
+                categoriaJogador: "Bagre",
+                nacionalidadeId: "1",
+                roleId: "a",
+                nome: "",
+                nick: "Beellzy",
+                nacionalidade: { 
+                    id: "1",
+                    nome: "br",
+                    status: "Ativo"
+                },
+                caminhoRelativo: "./assets/img/players/beellzy.png",
+                caminhoAbsoluto: "./assets/img/players/beellzy.png",
+                bagre: 0,
+                status: "Ativo"
+            },
+
 
 
         ],
@@ -708,7 +872,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 91,
                 ultimaPontuacao: 91,
-                time: "red",
+                time: "red-canids",
                 categoriaJogador: "God",
                 nacionalidadeId: "2",
                 roleId: "b",
@@ -762,7 +926,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 93,
                 ultimaPontuacao: 93,
-                time: "red",
+                time: "red-canids",
                 categoriaJogador: "God",
                 nacionalidadeId: "",
                 roleId: "",
@@ -789,7 +953,7 @@ export class PlayerMockService {
                 },
                 pontuacao: 91,
                 ultimaPontuacao: 91,
-                time: "red",
+                time: "red-canids",
                 categoriaJogador: "God",
                 nacionalidadeId: "2",
                 roleId: "e",
@@ -814,8 +978,8 @@ export class PlayerMockService {
                     nome: "coach",
                     status: "Ativo"
                 },
-                pontuacao: 92,
-                ultimaPontuacao: 92,
+                pontuacao: 94,
+                ultimaPontuacao: 94,
                 time: "los-grandes",
                 categoriaJogador: "God",
                 nacionalidadeId: "1",
