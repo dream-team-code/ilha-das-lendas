@@ -31,4 +31,4 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         local-dir: dist/ilha-das-lendas/
-        server-dir: /domains/ilhadaslendas.live/public_html/teste
+        server-dir: /domains/ilhadaslendas.live/public_html/teste/
