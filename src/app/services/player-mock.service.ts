@@ -1569,7 +1569,7 @@ export class PlayerMockService {
                     nome: "adc",
                     status: "Ativo"
                 },
-                pontuacao: 91,
+                pontuacao: 81,
                 ultimaPontuacao: 88,
                 time: "loud",
                 categoriaJogador: "Bom",
