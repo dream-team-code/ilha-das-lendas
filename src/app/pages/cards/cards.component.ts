@@ -11,7 +11,7 @@ export class CardsComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.cards?.nativeElement?.scrollIntoView({behavior: 'smooth', block: 'center'});
+      this.cards?.nativeElement?.scrollIntoView({behavior: 'smooth', block: 'start'});
     }, 0);
   }
 
