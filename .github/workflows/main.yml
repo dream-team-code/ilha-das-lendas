@@ -27,8 +27,8 @@ jobs:
       if: success()
       uses: SamKirkland/web-deploy@v1
       with:
-        target-server: ${{ secrets.SSH_SERVER }}
-        remote-user: ${{ secrets.SSH_USER }}
-        private-ssh-key: ${{ secrets.SSH_KEY }}
-        ssh-port: ${{ secrets.SSH_PORT }}
-        destination-path: ~/public_html/teste/
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
+        local-dir: dist/ilha-das-lendas/
+        server-dir: /domains/ilhadaslendas.live/public_html/
