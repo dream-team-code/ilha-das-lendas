@@ -3,7 +3,7 @@ name: GitHub Pages
 on:
   push:
     branches:
-    - main
+    - deploy
 
 jobs:
   deploy:
@@ -25,10 +25,9 @@ jobs:
 
     - name: Deploy
       if: success()
-      uses: SamKirkland/web-deploy@v1
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        target-server: ${{ secrets.SSH_SERVER }}
-        remote-user: ${{ secrets.SSH_USER }}
-        private-ssh-key: ${{ secrets.SSH_KEY }}
-        ssh-port: ${{ secrets.SSH_PORT }}
-        destination-path: ~/public_html/teste/
+        server: ${{ secrets.ftp_host }}
+        username: ${{ secrets.ftp_user }}
+        password: ${{ secrets.ftp_password }}
+        server-dir: public_html/teste/
