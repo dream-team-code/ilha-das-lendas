@@ -8,9 +8,11 @@
     <div class="c-display__cards">
         <div class="c-display__card-wrapper" *ngFor="let card of players$ | async index as i">
             <div class="c-display__card-icons" *ngIf="card.role.nome != 'coach'">
-                <div *ngIf="card.pontuacao - card.ultimaPontuacao != 0" class="c-display__variable">
-                    <img [src]="card.pontuacao - card.ultimaPontuacao > 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="" draggable="false">
-                    <span>{{ (card.pontuacao - card.ultimaPontuacao) }}</span>
+                <div  class="c-display__variable">
+                    <div *ngIf="card.pontuacao - card.ultimaPontuacao != 0">
+                        <img [src]="card.pontuacao - card.ultimaPontuacao > 0 ? './assets/img/up-icon.svg' : './assets/img/down-icon.svg'" alt="" draggable="false">
+                        <span>{{ (card.pontuacao - card.ultimaPontuacao) }}</span>
+                    </div>
                 </div>
                 <div class="c-display__mvp">
                     <img src="./assets/img/mvp-icon.svg"  alt="" draggable="false">
