@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 36 36">
+  <defs>
+    <linearGradient id="Gradiente_sem_nome_5" data-name="Gradiente sem nome 5" y1="18" x2="36" y2="18" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bb84ea"/>
+      <stop offset="1" stop-color="#9a70fa"/>
+    </linearGradient>
+  </defs>
+  <title>Ativo 1</title>
+  <g id="Camada_2" data-name="Camada 2">
+    <g id="Camada_2-2" data-name="Camada 2">
+      <rect width="36" height="36" style="fill: url(#Gradiente_sem_nome_5)"/>
+    </g>
+  </g>
+</svg>
