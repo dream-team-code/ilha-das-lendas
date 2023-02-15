@@ -651,7 +651,7 @@ export class PlayerMockService {
                 categoriaJogador: "Bom",
                 nacionalidadeId: "2",
                 roleId: "f",
-                nome: "SIN HYEOK",
+                nome: "Leonardo Belo",
                 nick: "Alocs",
                 nacionalidade: { 
                     id: "2",
@@ -1303,7 +1303,7 @@ export class PlayerMockService {
                 categoriaJogador: "Bom",
                 nacionalidadeId: "1",
                 roleId: "a",
-                nome: "",
+                nome: "André Luis Rios",
                 nick: "Ti0ben",
                 nacionalidade: { 
                     id: "1",
@@ -1466,7 +1466,7 @@ export class PlayerMockService {
                 categoriaJogador: "Mediano",
                 nacionalidadeId: "1",
                 roleId: "a",
-                nome: "",
+                nome: "Gabriel Peixoto",
                 nick: "Turtle",
                 nacionalidade: { 
                     id: "1",
@@ -1629,7 +1629,7 @@ export class PlayerMockService {
                 categoriaJogador: "Bagre",
                 nacionalidadeId: "1",
                 roleId: "a",
-                nome: "",
+                nome: "Lucas Spínola",
                 nick: "Beellzy",
                 nacionalidade: { 
                     id: "1",
